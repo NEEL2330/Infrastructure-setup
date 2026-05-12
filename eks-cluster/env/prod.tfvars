@@ -11,4 +11,4 @@ max_size     = 8
 
 instance_types = ["t3.medium"]
 
-Environment = "prod"
+common_tags = {"author" = "Neel", "resource" = "eks" }

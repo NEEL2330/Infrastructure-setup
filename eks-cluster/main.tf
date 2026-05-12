@@ -9,6 +9,6 @@ module "eks" {
 
   instance_types = var.instance_types
 
-  Environment = var.Environment
+  common_tags = var.common_tags
 
 }

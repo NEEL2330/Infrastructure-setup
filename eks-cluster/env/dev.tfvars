@@ -11,4 +11,4 @@ max_size     = 2
 
 instance_types = ["t3.micro"]
 
-Environment = "dev"
+common_tags = {"author" = "Neel", "resource" = "eks" }

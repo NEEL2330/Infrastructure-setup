@@ -19,10 +19,5 @@ resource "aws_eks_node_group" "main" {
     aws_iam_role_policy_attachment.ecr_policy
   ]
 
-  tags = merge(
-    local.common_tags,
-    {
-      Environment = var.Environment
-    }
-  )
+  tags = var.common_tags
 }

@@ -19,6 +19,8 @@ variable "min_size" {
 variable "instance_types" {
   type        = list(string)
 }
-variable "Environment"{
-    type = string
+variable "common_tags" {
+description =" some tags"
+type = map(string)
+default = {}
 }
