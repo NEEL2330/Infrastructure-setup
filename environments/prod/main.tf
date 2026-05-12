@@ -1,12 +1,12 @@
 module "eks" {
   source = "../../modules/eks"
 
-  cluster_name = var.cluster_name
-  subnet_ids   = var.subnet_ids
+  cluster_name  = var.cluster_name
+  subnet_ids    = var.subnet_ids
 
-  desired_size = 4
-  min_size = 2
-  max_size = 8
+  desired_size  = var.desired_size
+  min_size      = var.min_size
+  max_size      = var.max_size
 
-  instance_types = ["t3.medium"]
+  instance_types = var.instance_types
 }
