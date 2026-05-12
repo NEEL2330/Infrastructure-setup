@@ -10,3 +10,5 @@ min_size     = 2
 max_size     = 8
 
 instance_types = ["t3.medium"]
+
+Environment = "prod"

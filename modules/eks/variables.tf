@@ -19,3 +19,6 @@ variable "min_size" {
 variable "instance_types" {
   type        = list(string)
 }
+variable "Environment" {
+  type        = string
+}

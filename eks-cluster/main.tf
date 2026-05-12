@@ -1,5 +1,5 @@
 module "eks" {
-  source = "../module/eks"
+  source = "../modules/eks"
   cluster_name  = var.cluster_name
   subnet_ids    = var.subnet_ids
 
@@ -8,4 +8,7 @@ module "eks" {
   max_size      = var.max_size
 
   instance_types = var.instance_types
+
+  Environment = var.Environment
+
 }
